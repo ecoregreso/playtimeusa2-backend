@@ -1,0 +1,12 @@
+const express = require('express');
+const router = express.Router();
+const playerController = require('../controllers/playerController');
+
+router.post('/token-login', playerController.loginWithToken);
+
+module.exports = router;
+
+const express = require('express'); const router = express.Router(); const player = require('../controllers/playerController');
+router.post('/token-login', player.loginWithToken);
+router.get('/balance', player.getBalance);
+module.exports = router;
